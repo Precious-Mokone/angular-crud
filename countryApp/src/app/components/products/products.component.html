@@ -1,0 +1,15 @@
+<div *ngFor="let item of list; let indexOfelement = index;">
+
+    <div class="card" (click)="getProduct(indexOfelement)">
+        <div class="card-body">
+            <h1>Im here</h1>
+            <img class="card-img-top" src={{item.image}}>
+            <h1>{{item.id}}</h1>
+            <h4 class="">{{item.title}}</h4>
+            <p class="card-text">"{{item.description}}</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
